@@ -23,7 +23,7 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [onLoginSuccess, setOnLoginSuccess] = useState(null);
-  const [isMounted, setIsMounted] = useState(false);
+  const [isMounted, setIsMounted] = useState(true);
 
   // Initialize mock users database and check current session on mount
   useEffect(() => {

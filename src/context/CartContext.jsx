@@ -90,6 +90,7 @@ export function CartProvider({ children }) {
         clearCart,
         cartCount,
         cartTotal,
+        isMounted,
       }}
     >
       {children}

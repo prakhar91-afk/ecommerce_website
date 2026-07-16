@@ -32,7 +32,7 @@
       "rating": 4.7,
       "category": "Wearables",
       "image": "/images/smartwatch.webp",
-      "stock": 8,
+      "stock": 7,
       "reviews": [
         {
           "id": 201,
@@ -145,5 +145,29 @@
       ]
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "items": [
+        {
+          "id": 2,
+          "name": "Chronos SmartWatch v3",
+          "price": 299,
+          "quantity": 1,
+          "image": "/images/smartwatch.webp"
+        }
+      ],
+      "shippingAddress": {
+        "name": "Verifying User",
+        "email": "testverify1@example.com",
+        "address": "adca",
+        "city": "sa",
+        "zip": "941706"
+      },
+      "paymentMethod": "Credit Card (Simulated)",
+      "totalAmount": 323.67,
+      "id": 1001,
+      "date": "2026-07-16T16:45:19.521Z",
+      "status": "Processing"
+    }
+  ]
 }

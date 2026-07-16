@@ -8,7 +8,7 @@ import { useAuth } from '@/context/AuthContext';
 import styles from '@/styles/Header.module.css';
 
 export default function Header() {
-  const { cartCount, setIsCartOpen } = useCart();
+  const { cartCount, setIsCartOpen, isMounted: isCartMounted } = useCart();
   const { user, showLoginModal, logout, isMounted } = useAuth();
   const router = useRouter();
   const pathname = usePathname();
@@ -125,7 +125,7 @@ export default function Header() {
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
-            {cartCount > 0 && <span className={styles.badge}>{cartCount}</span>}
+            {isCartMounted && cartCount > 0 && <span className={styles.badge}>{cartCount}</span>}
           </button>
 
           {isMounted && (
